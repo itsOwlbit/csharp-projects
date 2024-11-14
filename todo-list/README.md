@@ -35,7 +35,7 @@ This is a simple console-based Todo List application built in C#. It allows user
 ## Program Output
 
 ```
-Hello
+Your Todo List Application
 
 What do you want to do?
 [S]ee all todos

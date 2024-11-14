@@ -4,7 +4,7 @@ string userOption;
 char letter = ' ';
 List<string> todoList = new List<string>();
 
-Console.WriteLine("Hello");
+Console.WriteLine("Your Todo List Application");
 
 do
 {
