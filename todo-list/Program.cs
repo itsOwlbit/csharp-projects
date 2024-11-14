@@ -30,7 +30,7 @@ do
                 removeItemFromList();
                 break;
             case 'E':
-                Console.WriteLine("You have selected E");
+                Console.WriteLine("Have a nice day!~");
                 break;
             default:
                 Console.WriteLine("Invalid option.");
