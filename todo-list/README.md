@@ -9,6 +9,18 @@ This is a simple console-based Todo List application built in C#. It allows user
 3. **[R]emove todo**: Displays the current todo list with numbered indices and allows the user to select an item by index to remove it from the list.
 4. **[E]xit**: Exits the program.
 
+## Design Decisions
+
+- **Allowing Invalid Inputs**:
+
+  - When the user tries to add an empty string or an already existing task to the todo list, or when they select an invalid index for removal, the program will show an appropriate message but will not force the user to re-enter the data immediately.
+  - This design choice allows the user to quickly go back to the menu and decide if they want to retry the action or simply move on to a different task. This provides more flexibility and prevents the user from getting stuck in a loop of continuous input prompts when they prefer to exit.
+  - For example, if the user accidentally selects [R] to remove a todo, they can simply enter an invalid input to return to the menu instead of being forced to remove a todo item.
+
+- **Error Handling**:
+  - If the user enters an invalid option (e.g., something other than `S`, `A`, `R`, or `E`), the program displays an "Invalid option" message and then returns to the menu. The user can then select another valid option.
+  - In case of empty input or a failed index parse, the program lets the user know what went wrong and allows them to continue interacting with the program without needing to restart or fix the error before continuing.
+
 ## Limitations
 
 - **No persistence**: The todo list is stored only in memory while the program is running. When the program is exited, the list is lost. If you restart the program, the list will be empty.
