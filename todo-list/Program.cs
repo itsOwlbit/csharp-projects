@@ -92,12 +92,12 @@ void addItemToList()
 void removeItemFromList()
 {
     displayTodoList();
-    Console.WriteLine();
 
     if (todoList.Count > 0)
     {
         int itemNumber;
 
+        Console.WriteLine();
         Console.WriteLine("Select the index of the todo you want to remove:");
         string userInput = Console.ReadLine();
 

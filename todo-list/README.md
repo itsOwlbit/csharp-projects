@@ -43,7 +43,6 @@ r
 
 Your todo list is currently empty.
 
-
 What do you want to do?
 [S]ee all todos
 [A]dd todo
