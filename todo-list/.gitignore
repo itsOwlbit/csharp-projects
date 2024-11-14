@@ -13,3 +13,6 @@ obj/
 # Ignore temporary files
 *.tmp
 *.log
+
+# macOS system files
+.DS_Store
