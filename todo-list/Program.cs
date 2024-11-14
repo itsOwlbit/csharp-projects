@@ -56,11 +56,16 @@ void viewList()
 {
     if (todoList.Count > 0)
     {
-        displayTodoList();
+        Console.WriteLine("Your Current Todo List:");
+
+        for (int i = 0; i < todoList.Count; i++)
+        {
+            Console.WriteLine($"{i + 1}. {todoList[i]}");
+        }
     }
     else
     {
-        Console.WriteLine("Todo list is currently empty.");
+        Console.WriteLine("Your todo list is currently empty.");
     }
 }
 
@@ -91,7 +96,7 @@ void addItemToList()
 
 void removeItemFromList()
 {
-    displayTodoList();
+    viewList();
 
     if (todoList.Count > 0)
     {
@@ -117,22 +122,5 @@ void removeItemFromList()
             Console.WriteLine();
             Console.WriteLine("Invalid input. No items removed.");
         }
-    }
-}
-
-void displayTodoList()
-{
-    if (todoList.Count > 0)
-    {
-        Console.WriteLine("Your Current Todo List:");
-
-        for (int i = 0; i < todoList.Count; i++)
-        {
-            Console.WriteLine($"{i + 1}. {todoList[i]}");
-        }
-    }
-    else
-    {
-        Console.WriteLine("Your todo list is currently empty.");
     }
 }
